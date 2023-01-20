@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .the {
+            color: aliceblue;
+            background-color: chartreuse;
+            border: 1px solid yellowgreen;
+            height: 20px;
+            width: 200px;
+        }
+
+        .bf::before {
+            content: '&';
+            background-color: greenyellow;
+        }
+
+        .af::after {
+            content: '*';
+            color: chartreuse;
+        }
+
+        ::placeholder {
+            color: aqua;
+        }
+
+        * {
+            margin: 0px;
+            padding: 3px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        div{
+            color: cadetblue;
+        }
+        #one{
+         color: coral;
+        }
+        .af,.the{
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <p+- id="one">Page</p>
+    <p class="the">the baap company</p>
+    <h1 class="af">company</h1>
+    <p class="bf">the company</p>
+
+    <label>Name</label>
+    <input type="text" placeholder="Enter your name">
+    <div>Baap</div>
+    
+</body>
+
+</html>

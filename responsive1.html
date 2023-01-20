@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background-image: url(OIP\ 9.jpg);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        .first {
+            border: 1px solid gray;
+            height: 300px;
+            margin-right: 5%;
+            border: none;
+        }
+
+        .second {
+            border: 1px solid gray;
+            height: 300px;
+            margin-left: 10%;
+            border: none;
+        }
+
+        .a {
+            float: right;
+            height: 20px;
+            border: none;
+        }
+
+        .b {
+            float: right;
+            width: 68%;
+            height: 25px;
+        }
+
+        @media screen and (min-width:300px) and (max-width:620px) {
+
+            .second {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width:620px) and (max-width:768px) {
+            .second {
+                border: 1px solid gray;
+                height: 300px;
+                border: none;
+                margin-top: 50%;
+                margin-right: 90%;
+            }
+
+            .first {
+                border: 1px solid gray;
+                height: 300px;
+                border: none;
+                margin-left: 90%;
+            }
+            
+            label{
+              margin-right: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="main">
+        <div class="first">
+            <label>Name</label>
+            <input type="text" class="a"><br><br>
+            <label>Age</label>
+            <input type="number" class="a"><br><br>
+            <label>Address</label>
+            <input type="text" class="a"><br><br>
+            <label>E-mail</label>
+            <input type="email" class="a"><br><br>
+            <label>Class xII(%)</label>
+            <input type="number" class="a"><br><br>
+            <lable>Education </lable>
+            <select class="b">
+                <option>B.trch</option>
+                <option>BCA</option>
+                <option>BCS</option>
+            </select>
+        </div>
+        <div class="second">
+            <label>Father's Name</label>
+            <input type="text" class="a"><br><br>
+            <label>Date of Birth</label>
+            <input type="text" class="a"><br><br>
+            <label>Mobile No</label>
+            <input type="text" class="a"><br><br>
+            <label>class x(%)</label>
+            <input type="text" class="a"><br><br>
+            <label>Adhar No </label>
+            <input type="text" class="a"><br><br>
+            <label>Employe Id </label>
+            <input type="text" class="a"><br><br>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
